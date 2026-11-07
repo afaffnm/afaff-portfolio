@@ -1,63 +1,52 @@
-/* Remove the browser's default spacing */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
-  color: #fff;
+    font-family: 'segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
 }
-
-/* The full-screen first section */
 .hero {
-  position: relative;          /* lets children be placed inside it */
-  min-height: 100vh;           /* 100% of the screen height */
-  overflow: hidden;
-  background: linear-gradient(to bottom, #0a1a3a, #000);  /* navy to black */
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0a1a3a, #000);
 }
-
-/* The giant background word */
 .big-word {
-  position: absolute;
-  top: 6%;
-  left: 50%;
-  transform: translateX(-50%);   /* centres it horizontally */
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(4rem, 16vw, 14rem);   /* grows and shrinks with screen */
-  white-space: nowrap;
-  color: transparent;
-  background: linear-gradient(to bottom, #4fd8ff, transparent);
-  -webkit-background-clip: text;
-  background-clip: text;          /* gradient shows only inside the letters */
-  opacity: 0.55;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Anton',sans-serif;
+    font-size: clamp(4rem, 16vw, 14rem);
+    white-space: nowrap;
+    color: transparent;
+    background: linear-gradient(to bottom, #4fd8ff, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: o.55;
 }
-
-/* Name block, bottom left */
 .intro {
-  position: absolute;
-  left: 6%;
-  bottom: 12%;
-  z-index: 2;                     /* sits above the big word */
+    position: absolute;
+    left: 6%;
+    bottom: 12%;
+    z-index: 2;
 }
-
 .hello {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #9fe9ff;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #9fe9ff;
 }
-
 .name {
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(3rem, 8vw, 6.5rem);
-  line-height: 1;
+    font-family: 'Anton',sans-serif;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: 1;
 }
-
 .role {
-  margin-top: 0.6rem;
-  font-size: 1.3rem;
-  letter-spacing: 0.2em;
-  color: #00e5ff;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.2;
+    color: #00e5ff;
 }
